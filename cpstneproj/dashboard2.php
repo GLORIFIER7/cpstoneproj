@@ -1,9 +1,10 @@
 <?php
 include_once("Layouts/load.php");
 require_once('connections/inventoryclass.php');
-?>
 
-<main class="mt-5 pt-5">
+
+?>
+    <main class="mt-5 pt-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 fw-bold fs-3">Dasboard</div>
@@ -16,7 +17,7 @@ require_once('connections/inventoryclass.php');
                         <div class="card-body">
                           <h5 class="card-header"> Products list</h5>
                           <p class="card-text">
-                            <p>Total Product:  <?php $users = $invt->getTotalItems(); ?></p>
+                            <p>Total Product: 35</p>
                             <span class="right-icon ms-auto"  style="float: right; margin-right: 15px;"><i class="bi bi-cart-fill" style="font-size: 60px;"></i></span>
                           </p>
 
@@ -35,7 +36,8 @@ require_once('connections/inventoryclass.php');
                         <div class="card-body">
                           <h5 class="card-header">Category List</h5>
                           <p class="card-text">
-                            <p>Total Categories: <?php $users = $invt->getTotalCategory(); ?></p>
+                            <p>Total Categories: <?php $users = $invt->getTotalUsers();
+print_r($users); ?></p>
                             <span class="right-icon ms-auto"  style="float: right; margin-right: 15px;"><i class="bi bi-microsoft" style="font-size: 60px;"></i></span>
                           </p>
                         </div>
@@ -54,7 +56,7 @@ require_once('connections/inventoryclass.php');
                         <div class="card-body">
                           <h5 class="card-header">Suppliers List</h5>
                           <p class="card-text">
-                            <p>Total Supplier: <?php $users = $invt->getTotalSuppliers(); ?></p>
+                            <p>Total Supplier: 10</p>
                             <span class="right-icon ms-auto"  style="float: right; margin-right: 15px;"><i class="bi bi-truck" style="font-size: 60px;"></i></span>
                           </p>
                         </div>
@@ -73,7 +75,7 @@ require_once('connections/inventoryclass.php');
                         <div class="card-body">
                           <h5 class="card-header">Users List</h5>
                           <p class="card-text">
-                            <p>Total Users: <?php $users = $invt->getTotalUsers(); ?> </p>
+                            <p>Total Users: 10</p>
                             <span class="right-icon ms-auto"  style="float: right; margin-right: 15px;"><i class="bi bi-people-fill" style="font-size: 60px;"></i></span>
                           </p>
                         </div>
@@ -178,5 +180,13 @@ require_once('connections/inventoryclass.php');
 
 
 
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+<script src="components/js/bootstrap.bundle.min.js"></script>
+<script src="components/js/jquery-3.6.0.js"></script>
+<script src="components/js/jquery.dataTables.min.js"></script>
+<script src="components/js/dataTables.bootstrap5.min.js"></script>
+<script src="components/js/script.js"></script>
 </body>
 </html>

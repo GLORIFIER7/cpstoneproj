@@ -1,13 +1,3 @@
-<?php
-// start session
-if(!isset($_SESSION)){
-    session_start();
-}
-
-include_once("connections/conn.php");
-$con = connection();
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +10,7 @@ $con = connection();
     <link rel="stylesheet" href="./components/css/datatables.bootstrap5.min.css" />
     <link rel="stylesheet" href="./components/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
 
           
     <title>Document</title>
@@ -35,7 +26,7 @@ $con = connection();
                     <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
                 </button>
             <!-- Offcanvas Trigger ends here -->
-          <a class="navbar-brand fw-bold text-uppercase me-auto" href="dashboard.php"> Angelito Inventory </a>
+          <a class="navbar-brand fw-bold text-uppercase me-auto" href="dashboard.php"> Company Name </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,13 +36,7 @@ $con = connection();
               <div class="input-group my-3 my-lg-0">
 
 <!-- for username -->
-                <?php
-
-                if(isset($_SESSION['UserLogin'])){
-                    echo '<p class="mt-2 text-white"> Welcome: '.$_SESSION['UserLogin'].'</p>';
-                }
-                ?>
-
+           
 
                 <!-- <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-bell-fill" style="font-size: 16px;"></i> -->

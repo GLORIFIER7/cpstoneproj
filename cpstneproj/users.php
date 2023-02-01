@@ -6,13 +6,13 @@ include_once("Layouts/load.php");
     <main class="mt-5 pt-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 fw-bold fs-4">Supplier Management</div>
+                <div class="col-md-12 fw-bold fs-4">User Management</div>
             </div>
 
             <div class="row mt-3 mb-3">
                 <div class="col-md-3 mb-3">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" href="#addSuppliermodal">
-                        Add Supplier <span class="right-icon ms-auto"><i class="bi bi-bag-plus-fill" style="margin-left: 5px;"></i></span>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" href="#addUsermodal">
+                        Add User <span class="right-icon ms-auto"><i class="bi bi-person-square" style="margin-left: 5px;"></i></span>
                     </button>
                 </div>
             </div>
@@ -51,4 +51,4 @@ include_once("Layouts/load.php");
     </main>
 
 
-    <?php include_once "modals/modal.supplier.php"; ?>
+    <?php include_once "modals/modal.adduser.php"; ?>
