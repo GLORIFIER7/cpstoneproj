@@ -1,0 +1,8 @@
+div {
+    background-color: aquamarine;
+    border: 2px coral;
+}
+body.background{
+    filter: saturate(250%);
+    image-resolution: saturate(250);
+}
